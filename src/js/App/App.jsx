@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Components.
+import Jumbotron from './Jumbotron.jsx';
+
 export default class App extends React.Component {
 
   // Component Constructor.
@@ -11,7 +14,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        App
+        <Jumbotron/>
       </div>
     );
   };

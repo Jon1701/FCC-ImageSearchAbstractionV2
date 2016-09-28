@@ -1,0 +1,30 @@
+body {
+  margin: 15px;
+  background-color: #F5F6F7;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+};
+
+// Box shadow for card effect.
+.boxshadow {
+  box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1);
+};
+
+// Set padding.
+.padding-10 {
+  padding: 10px !important;
+};
+
+// Sets margins to 0.
+.clear-margins {
+  margin: 0 !important;
+};
+
+// Aligns text to centre.
+.text-center {
+  text-align: center !important;
+};
+
+// SASS partials.
+@import '_Jumbotron';
