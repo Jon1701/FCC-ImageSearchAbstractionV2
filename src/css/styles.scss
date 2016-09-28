@@ -4,6 +4,7 @@ body {
   color: #333333;
   font-family: Arial, sans-serif;
   font-size: 100%;
+  max-width: 100%;
 };
 
 // Box shadow for card effect.
@@ -28,3 +29,6 @@ body {
 
 // SASS partials.
 @import '_Jumbotron';
+@import '_Search';
+@import '_PaginationControls';
+@import '_Gallery';
