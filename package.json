@@ -1,0 +1,41 @@
+{
+  "name": "ms-image-search-abstraction-v2",
+  "version": "2.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "gulp --env development",
+    "prod": "gulp --env production",
+    "build": "gulp --env production build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon1701/MS-ImageSearchAbstractionV2.git"
+  },
+  "author": "Jon1701",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jon1701/MS-ImageSearchAbstractionV2/issues"
+  },
+  "homepage": "https://github.com/Jon1701/MS-ImageSearchAbstractionV2#readme",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "classnames": "^2.2.5",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "json-loader": "^0.5.4",
+    "mongodb": "^2.2.10",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "superagent": "^2.2.0",
+    "webpack-stream": "^3.2.0"
+  }
+}
