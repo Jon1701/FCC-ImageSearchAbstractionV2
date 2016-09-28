@@ -46,6 +46,8 @@ export default class Search extends React.Component {
         // Parse server response back into JSON.
         res = JSON.parse(res.text);
 
+        console.log(res);
+
         // Store server response into state.
         thisComp.setState(res);
 
@@ -57,13 +59,13 @@ export default class Search extends React.Component {
   render() {
     return (
       <div>
-      
+
         <div id="section-search" className="boxshadow padding-10">
           <SearchForm sendRequest={this.sendRequest}/>
         </div>
 
         <div>
-          <SearchResults latestResponse={this.state}/>
+          <SearchResults latestResponse={this.state} sendRequest={this.sendRequest}/>
         </div>
 
       </div>

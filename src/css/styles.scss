@@ -27,6 +27,11 @@ body {
   text-align: center !important;
 };
 
+// Hides elements.
+.hidden {
+  display: none;
+};
+
 // SASS partials.
 @import '_Jumbotron';
 @import '_Search';
