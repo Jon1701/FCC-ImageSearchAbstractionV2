@@ -1,0 +1,45 @@
+#section-search {
+  background-color: #FFFFFF;
+};
+
+#section-search-form {
+
+  border: solid 1px #333333;
+
+  // Search Box.
+  input[type="text"] {
+    box-sizing: border-box;
+    width: 90%;
+    height: 45px;
+
+    padding: 0 10px 0 10px;
+
+    font-size: 1.5em;
+
+    border: none;
+    outline: none;
+    background: none;
+  };
+
+  // Search Submit.
+  button[type="submit"] {
+    box-sizing: border-box;
+    width: 10%;
+    height: 45px;
+
+    font-size: 1.5em;
+
+    border: none;
+    outline: none;
+    background: #333333;
+    color: #FFFFFF;
+
+    cursor: pointer;
+  };
+
+};
+
+
+#section-search-results {
+
+};
