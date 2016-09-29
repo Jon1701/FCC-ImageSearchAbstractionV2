@@ -44,9 +44,44 @@ app.get('/hostname', function(req, res) {
 });
 
 ////////////////////////////////////////////////////////////////////////////////
+// Gets recent search data.
+////////////////////////////////////////////////////////////////////////////////
+app.get('/recent', function(req, res, next) {
+
+  // Connect to the MongoDB database.
+  MongoClient.connect(MONGO.connString, function(err, db) {
+
+    // Error handling.
+    if (err) { return next(err); };
+
+    // If database connection is a success, need to attempt connection to
+    // a collection.
+    db.collection(MONGO.collection, function(err, coll) {
+
+      // Error handling.
+      if (err) { return next(err); };
+
+      // Find the last 50 documents in the collection, suppress _id field.
+      var cursor = coll.find({}, {'_id': 0}).sort({'$natural': -1}).limit(50);
+
+      // Return array to client.
+      cursor.toArray(function(err, arr) {
+
+        // Error handling.
+        if (err) { return next(err); };
+
+        res.send(arr);
+      });
+
+    }); // End connection to collection.
+
+  }); // End connection to database.
+
+});
+////////////////////////////////////////////////////////////////////////////////
 // Handles search query from client.
 ////////////////////////////////////////////////////////////////////////////////
-app.get('/search', function(req, res) {
+app.get('/search', function(req, res, next) {
 
   // Extract request parameters from query string.
   var searchTerms = req.query.q;          // Search terms.
