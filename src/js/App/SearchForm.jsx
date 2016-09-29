@@ -59,7 +59,7 @@ export default class SearchForm extends React.Component {
       <div id="section-search-form">
 
         <form id="form-search">
-          <input type="text" onChange={this.validateForm} placeholder="Enter some keywords" defaultValue="star trek"/>
+          <input type="text" onChange={this.validateForm} placeholder="Enter some keywords"/>
           <button type="submit" onClick={this.performSearch} disabled={this.state.isValid == false}>Go</button>
         </form>
 
