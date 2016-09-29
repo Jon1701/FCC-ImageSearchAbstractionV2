@@ -1,0 +1,19 @@
+.container-tabs {
+
+  background-color: #FFFFFF;
+
+  .tab {
+    float: left;
+    width: 50%;
+
+    padding: 15px 0 15px 0;
+
+    vertical-align: middle;
+  };
+
+  .tab-active {
+    background-color: #6aaf4e;
+    color: white;
+  };
+
+}

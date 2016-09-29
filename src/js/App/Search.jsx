@@ -1,6 +1,8 @@
 // React.
 import React from 'react';
 
+import classNames from 'classnames';
+
 // Components.
 import SearchForm from './SearchForm.jsx';
 import SearchResults from './SearchResults.jsx';
@@ -57,8 +59,13 @@ export default class Search extends React.Component {
 
   // Component render.
   render() {
+
+    var myClasses = classNames({
+      'hidden': this.props.tabId != this.props.currentTab
+    });
+
     return (
-      <div>
+      <div className={myClasses}>
 
         <div id="section-search" className="boxshadow padding-10">
           <SearchForm sendRequest={this.sendRequest}/>
