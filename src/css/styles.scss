@@ -47,6 +47,19 @@ body {
   clear: both;
 };
 
+.bold {
+  font-weight: bold;
+};
+
+.italic {
+  font-style: italic;
+};
+
+.code {
+  font-family: monospace;
+  font-size: 125%;
+};
+
 // SASS partials.
 @import '_icons';
 @import '_responsive-grid';
