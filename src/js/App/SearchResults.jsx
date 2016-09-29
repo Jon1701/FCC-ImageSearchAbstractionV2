@@ -26,7 +26,7 @@ export default class SearchResults extends React.Component {
     return (
       <div id="section-search-results" className={"myClasses"}>
         <PaginationControls latestResponse={this.props.latestResponse} sendRequest={this.props.sendRequest}/>
-        <Gallery/>
+        <Gallery latestResponse={this.props.latestResponse}/>
       </div>
     );
   };

@@ -39,7 +39,16 @@
 
 };
 
+#section-gallery {
+  background-color: #FFFFFF;
 
-#section-search-results {
+  .container-search-result {
+    background-color: #FFFFFF;
+    margin-bottom: 1px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
 
 };

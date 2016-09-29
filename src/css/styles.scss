@@ -32,8 +32,19 @@ body {
   display: none;
 };
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+};
+
+.thumbnail {
+  height: 300px !important;
+  object-fit: cover;
+}
+
 // SASS partials.
+@import '_responsive-grid';
 @import '_Jumbotron';
 @import '_Search';
 @import '_PaginationControls';
-@import '_Gallery';
