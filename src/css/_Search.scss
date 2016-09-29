@@ -4,7 +4,7 @@
 
 #section-search-form {
 
-  border: solid 1px #333333;
+  border: solid 1px #CCCCCC;
 
   // Search Box.
   input[type="text"] {
@@ -28,13 +28,18 @@
     height: 45px;
 
     font-size: 1.5em;
-
+    background: #333333;
     border: none;
     outline: none;
-    background: #333333;
+
     color: #FFFFFF;
 
     cursor: pointer;
+
+    // Disabled submit button colour.
+    &:disabled {
+      background: #CCCCCC;
+    };
   };
 
 };
@@ -46,9 +51,7 @@
     background-color: #FFFFFF;
     margin-bottom: 1px;
 
-    img {
-      margin: 0 auto;
-    }
-  }
+    img { margin: 0 auto; };
+  };
 
 };
