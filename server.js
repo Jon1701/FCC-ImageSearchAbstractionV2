@@ -112,7 +112,7 @@ app.get('/search', function(req, res, next) {
       data = data.map(function(result, idx, arr) {
 
         // New object to hold only the keys we want to keep.
-        let redactedResult = {};
+        var redactedResult = {};
 
         // Two cases:
         //  1) Images
