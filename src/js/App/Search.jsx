@@ -48,8 +48,6 @@ export default class Search extends React.Component {
         // Parse server response back into JSON.
         res = JSON.parse(res.text);
 
-        console.log(res);
-
         // Store server response into state.
         thisComp.setState(res);
 
