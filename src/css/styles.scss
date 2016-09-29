@@ -41,9 +41,14 @@ body {
 .thumbnail {
   height: 300px !important;
   object-fit: cover;
-}
+};
+
+.clearfix {
+  clear: both;
+};
 
 // SASS partials.
+@import '_icons';
 @import '_responsive-grid';
 @import '_Jumbotron';
 @import '_Search';

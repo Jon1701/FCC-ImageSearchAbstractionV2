@@ -52,8 +52,15 @@ export default class PaginationControls extends React.Component {
 
     return (
       <div id="section-pagination-controls" className="boxshadow">
-        <button onClick={this.previousResults}>Previous</button>
-        <button onClick={this.nextResults}>Next</button>
+
+        <button onClick={this.previousResults}>
+          <span className="icon icon-arrow-left"></span>{" "}Previous
+        </button>
+
+        <button onClick={this.nextResults}>
+          <span className="icon icon-arrow-right"></span>{" "}Next
+        </button>
+        
       </div>
     );
   };
