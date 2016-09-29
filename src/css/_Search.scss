@@ -52,6 +52,12 @@
     margin-bottom: 1px;
 
     img { margin: 0 auto; };
+
+    // Background hover effect.
+    &:hover {
+      background-color: #F16529;
+      transition: all 0.5s ease;
+    };
   };
 
 };
